@@ -25,12 +25,8 @@ local function readlines()
 			local sl = string.sub(line, 1, space-1)
 
 			if sl then
-				local trim = string.gsub(sl, "(%s)", "")
-
-				if trim then
-					local codes = split(sl, "..")
-					table.insert(emojicode, {s=codes[1], e=codes[#codes]})
-				end
+				local codes = split(sl, "..")
+				table.insert(emojicode, {s=codes[1], e=codes[#codes]})
 			end
 		else
 			break
