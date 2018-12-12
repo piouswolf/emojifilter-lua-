@@ -128,8 +128,8 @@ function emojiFilter:trimEmoji(str)
 			if not emoji[unicode] then
 				ret = ret .. word
 			end
-        else
-            break;
+		else
+			break;
 		end
 
 		index = i
