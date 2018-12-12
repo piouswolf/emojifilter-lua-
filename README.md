@@ -9,3 +9,7 @@ Such as, ...
 ["270F"] = true, -- (✏️)       pencil
 ...
 So, a unicode codepoint(s) translated from a utf-8 word can be checked by the table.
+
+
+
+It will be more efficient if implemented by C/C++ or other native language.
