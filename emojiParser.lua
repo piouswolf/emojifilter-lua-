@@ -25,16 +25,8 @@ local function readlines()
 			local sl = string.sub(line, 1, space-1)
 
 			if sl then
-				--local codes = split(sl, "..")
-				--table.insert(emojicode, {s=codes[1], e=codes[#codes]})
-				local sep = string.find(sl, "..")
-				if sep then
-					local s = string.sub(sl, 1, sep - 1)
-					local e = string.sub(sl, sep + 2, -1)
-					table.insert(emojicode, {s=s, e=e})
-				else
-					table.insert(emojicode, {s=sl, e=sl})
-				end
+				local codes = split(sl, "..")
+				table.insert(emojicode, {s=codes[1], e=codes[#codes]})
 			end
 		else
 			break
