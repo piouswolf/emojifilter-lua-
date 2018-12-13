@@ -4,5 +4,5 @@ local strTrimed = emojiFilter:trimEmoji(strWithEmoji);
 print("strTrimed", strTrimed);
 
 ----------------------------printed------------------------------
---Hello,World!
+--strTrimed Hello,World!
 -----------------------------------------------------------------
