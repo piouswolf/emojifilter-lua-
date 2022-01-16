@@ -82,7 +82,11 @@ local function binToUnicode(bin)
 	local unicode = ""
 
 	for i=1, #t do
-		unicode = unicode .. string.format("%X", binToNum(t[i]))
+		if 1 < i then
+			unicode = unicode .. string.format("%02X", binToNum(t[i]))
+		else
+			unicode = unicode .. string.format("%X", binToNum(t[i]))
+		end
 	end
 
 	return unicode
